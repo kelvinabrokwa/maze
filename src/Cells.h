@@ -23,6 +23,11 @@ public:
 	void setLeftWall(int x, int y, bool on);
 	void setRightWall(int x, int y, bool on);
 	void printCells();
+	void writeCellsToDisk();
+private:
+	static const int width = 10;
+	static const int height = 10;
+	int cells[10][10];
 };
 
 #endif /* CELLS_H_ */
