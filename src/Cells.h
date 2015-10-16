@@ -10,8 +10,15 @@
 
 class Cells {
 public:
-	Cells(int height, int width);
+	Cells();
 	virtual ~Cells();
+	int getValueOfCell(int x, int y);
+	void init();
+	void setTopWall(int x, int y, bool on);
+	void setBottomWall(int x, int y, bool on);
+	void setLeftWall(int x, int y, bool on);
+	void setRightWall(int x, int y, bool on);
+
 };
 
 #endif /* CELLS_H_ */
