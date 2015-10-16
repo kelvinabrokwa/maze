@@ -1,15 +1,17 @@
 //============================================================================
 // Name        : maze.cpp
 // Author      : Kelvin Abrokwa-Johnson
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
+// Version     : 0.0.1
+// Copyright   : TO DO
+// Description : Maze video game
 //============================================================================
 
 #include <iostream>
+#include "Cells.h"
 using namespace std;
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	Cells c;
+	c.printCells();
 	return 0;
 }
