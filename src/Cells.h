@@ -11,6 +11,7 @@
 #include "Constants.h"
 #include <iostream>
 #include <string>
+#include <fstream>
 using namespace std;
 
 class Cells {
@@ -23,9 +24,9 @@ public:
 	void setLeftWall(int x, int y, bool on);
 	void setRightWall(int x, int y, bool on);
 	void printCells();
-	void writeCellsToDisk();
+	void showMaze();
 private:
-	static const int width = 10;
+	static const int width = 11;
 	static const int height = 10;
 	int cells[10][10];
 };

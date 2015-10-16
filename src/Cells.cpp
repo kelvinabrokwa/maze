@@ -59,4 +59,25 @@ void Cells::printCells() {
 	}
 }
 
-void Cells::writeCellsToDisk() {}
+// LORD, Forgive me for this method
+void Cells::showMaze() {
+	string o = "var width = " + to_string(width) + ";\n";
+	o += "var height = " + to_string(height) + ";\n";
+	o += "var cells = ";
+	o += "[\n";
+	for (int y = 0; y < height; y++) {
+		o += "\t[";
+		for (int x = 0; x < width; x++) {
+			if (x < width - 1) o += to_string(cells[x][y]) + ",";
+			else o += to_string(cells[x][y]);
+		}
+		if (y < height - 1) o += "],\n";
+		else o += "]\n";
+	}
+	o += "];\n";
+	ofstream file;
+	file.open("../../data.js");
+	file << o;
+	file.close();
+	system("open http://localhost:3000");
+}

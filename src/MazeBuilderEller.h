@@ -17,7 +17,7 @@ public:
 	Cells generateMaze();
 private:
 	Cells cells;
-	static const int width = 10;
+	static const int width = 11;
 	static const int height = 10;
 	int sets[10][10];
 	void joinSets(int row);

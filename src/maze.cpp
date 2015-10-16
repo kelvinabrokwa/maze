@@ -15,6 +15,6 @@ int main() {
 	Cells c;
 	MazeBuilderEller m;
 	c = m.generateMaze();
-	c.printCells();
+	c.showMaze();
 	return 0;
 }
