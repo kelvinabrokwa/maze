@@ -9,6 +9,7 @@
 int height = 10;
 int width = 10;
 int cells[10][10];
+
 Cells::Cells() {
 	for (int x = 0; x < width; x++) {
 		for (int y = 0; y < height; y++) {
@@ -17,9 +18,7 @@ Cells::Cells() {
 	}
 }
 
-Cells::~Cells() {
-	// TODO Auto-generated destructor stub
-}
+Cells::~Cells() {}
 
 int Cells::getValueOfCell(int x, int y) {
 	return cells[x][y];
@@ -55,9 +54,9 @@ void Cells::setRightWall(int x, int y, bool on) {
 };
 
 void Cells::printCells() {
-	for (int x = 0; x < height; x++) {
-		for (int y = 0; y < width; y++) {
-			if (y != width - 1) cout << cells[x][y];
+	for (int x = 0; x < width; x++) {
+		for (int y = 0; y < height; y++) {
+			if (y != height - 1) cout << cells[x][y];
 			else cout << cells[x][y] << endl;
 		}
 	}
