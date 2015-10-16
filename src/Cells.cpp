@@ -24,7 +24,13 @@ int Cells::getValueOfCell(int x, int y) {
 	return cells[x][y];
 }
 
-void setTopWall(int x, int y, bool on) {};
+void setTopWall(int x, int y, bool on) {
+	if (on) {
+
+	} else {
+
+	}
+};
 
 void setBottomWall(int x, int y, bool on) {};
 
