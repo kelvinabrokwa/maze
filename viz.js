@@ -10,7 +10,6 @@ var WALL_TOP = 1,
     WALL_LEFT = 4,
     WALL_RIGHT = 8;
 
-
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 ctx.canvas.width = 600;
